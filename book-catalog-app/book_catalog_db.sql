@@ -1,10 +1,10 @@
 CREATE TABLE tbl_book(
    tbl_book_id    INTEGER  NOT NULL PRIMARY KEY 
-  ,book_isbn      VARCHAR(26) NOT NULL
-  ,book_title     VARCHAR(118) NOT NULL
-  ,book_author    VARCHAR(90) NOT NULL
-  ,book_publisher VARCHAR(76) NOT NULL
-  ,book_section   VARCHAR(3) NOT NULL
+  ,book_isbn      TEXT NOT NULL
+  ,book_title     TEXT NOT NULL
+  ,book_author    TEXT NOT NULL
+  ,book_publisher TEXT NOT NULL
+  ,book_section   TEXT NOT NULL
 );
 INSERT INTO tbl_book(tbl_book_id,book_isbn,book_title,book_author,book_publisher,book_section) VALUES (1,'978-983-3653-29-4','Roket gabus','Nuriazam Ismail','PTS One','A1');
 INSERT INTO tbl_book(tbl_book_id,book_isbn,book_title,book_author,book_publisher,book_section) VALUES (2,'978-983-3654-94-9','Selamat hari raya The Silver','Kusyi Hirdan','NA','A1');
