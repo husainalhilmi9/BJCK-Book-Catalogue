@@ -223,11 +223,8 @@ error_reporting(E_ALL);
                                     $bookISBN = $row['book_isbn'];
                                     $bookTitle = $row['book_title'];
                                     $bookSection = $row['book_section'];
-                                    $bookTimeAdded = $row['time_added'];
                                     $bookAuthor = $row['book_author'];
                                     $bookPublisher = $row['book_publisher'];
-
-                                    $formattedDateTime = date('F j, Y H:i A', strtotime($bookTimeAdded));
                                 
                             ?>
 
@@ -273,7 +270,6 @@ error_reporting(E_ALL);
             let bookTitle = $("#bookTitle-" + id).text();
             let bookSection = $("#bookSection-" + id).text();
             let bookAuthor = $("#bookAuthor-" + id).text();
-            let bookDateAdded = $("#bookDateAdded-" + id).text();
             let bookPublisher = $("#bookPublisher-" + id).text();
 
             // Populate the view modal with the retrieved details
@@ -293,7 +289,6 @@ error_reporting(E_ALL);
             let updateBookTitle = $("#bookTitle-" + id).text();
             let updateBookSection = $("#bookSection-" + id).text();
             let updateBookAuthor = $("#bookAuthor-" + id).text();
-            let updateBookDateAdded = $("#bookDateAdded-" + id).text();
             let updateBookPublisher = $("#bookPublisher-" + id).text();
 
             // Populate the view modal with the retrieved details
@@ -302,7 +297,6 @@ error_reporting(E_ALL);
             $("#updateBookTitle").val(updateBookTitle);
             $("#updateBookSection").val(updateBookSection);
             $("#updateBookAuthor").val(updateBookAuthor);
-            $("#updateBookDateAdded").val(updateBookDateAdded);
             $("#updateBookPublisher").val(updateBookPublisher);
         }
 
